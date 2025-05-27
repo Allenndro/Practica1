@@ -1,14 +1,14 @@
-// import static org.junit.jupiter.api.Assertions.assertEquals;
+// aprobado
 
-// import org.junit.jupiter.api.Test;
+int nota = 10;
 
-public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello world!");
-  }
-
-  // @Test
-  // void addition() {
-  //     assertEquals(2, 1 + 1);
-  // }
+if (nota >= 9){
+    System.out.println("Avanzado");
 }
+else if (nota <= 8 && nota >= 6 ){
+    System.out.println("Suficiente");
+}
+else (nota <= 5){
+    System.out.println("En Proceso");
+}
+
