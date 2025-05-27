@@ -1,7 +1,12 @@
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int nota = 10;
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Ingresa tu nota: ");
+        int nota = scanner.nextInt();
 
         if (nota >= 9) {
             System.out.println("Avanzado");
@@ -12,5 +17,7 @@ public class Main {
         else if (nota <= 5) {
             System.out.println("En Proceso");
         }
+        
+        scanner.close();
     }
 }
