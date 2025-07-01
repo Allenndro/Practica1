@@ -73,8 +73,8 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
+args = "javac -classpath .:target/dependency/* -d target/classes $(find src -type f -name '*.java')"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "java -classpath .:target/dependency/* Lampara.Main"
+args = "java -classpath target/classes:target/dependency/* Lampara.Main"
