@@ -14,10 +14,10 @@ public class Vehiculos {
   }
 }
 
-class Auto extends Vehiculos {
+class Carro extends Vehiculos {
   private int KM;
   
-  public Auto(String marca, String modelo, int anio, int KM){
+  public Carro(String marca, String modelo, int anio, int KM){
     super(marca, modelo, anio);
     this.KM = KM;
   }

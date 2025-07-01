@@ -1,4 +1,3 @@
-
 public class Lampara{
   private String color;
   private String intensidad;
