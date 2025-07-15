@@ -1,4 +1,6 @@
 
+package Electrodomesticos;
+
 public class MainElectrodomesticos {
     public static void main(String[] args) {
         Televisor tv = new Televisor("Samsung", 0.1);

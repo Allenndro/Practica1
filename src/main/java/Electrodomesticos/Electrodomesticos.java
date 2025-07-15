@@ -1,3 +1,5 @@
+package Electrodomesticos;
+
 interface Consumible {
     double calcularConsumo(double horasUso);
 }

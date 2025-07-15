@@ -1,10 +1,18 @@
+package Lampara;
+
 public class Lampara{
   private String color;
   private String intensidad;
   private boolean encendida;
   
   public Lampara(){
-          
+    this.encendida = false;
+  }
+  
+  public Lampara(String color, String intensidad){
+    this.color = color;
+    this.intensidad = intensidad;
+    this.encendida = false;
   }
         
   public void encender(){

@@ -78,3 +78,42 @@ args = "javac -classpath .:target/dependency/* -d target/classes $(find src -typ
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "java -classpath target/classes:target/dependency/* Lampara.Main"
+
+[[workflows.workflow]]
+name = "Run Auto Main"
+author = 43185235
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "javac -classpath .:target/dependency/* -d target/classes $(find src -type f -name '*.java')"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "java -classpath target/classes:target/dependency/* Auto.MainAuto"
+
+[[workflows.workflow]]
+name = "Run Vehiculos Main"
+author = 43185235
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "javac -classpath .:target/dependency/* -d target/classes $(find src -type f -name '*.java')"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "java -classpath target/classes:target/dependency/* Vehiculos.MainVehiculos"
+
+[[workflows.workflow]]
+name = "Run Electrodomesticos Main"
+author = 43185235
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "javac -classpath .:target/dependency/* -d target/classes $(find src -type f -name '*.java')"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "java -classpath target/classes:target/dependency/* Electrodomesticos.MainElectrodomesticos"

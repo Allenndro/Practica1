@@ -1,3 +1,5 @@
+package Auto;
+
 public class Auto{
   private String marca;
   private String modelo;
@@ -10,9 +12,9 @@ public class Auto{
           this.encendido = false;
   }
   public void encender(){
-        if (encendido){
+        if (!encendido){
           encendido = true;
-          System.out.println("el " + marca +  " "  + modelo + "está encendido");
+          System.out.println("el " + marca +  " "  + modelo + " está encendido");
      } else  {
              System.out.println("El auto ya está encendido");
   }
@@ -21,7 +23,7 @@ public class Auto{
   public void apagar(){
         if (encendido){
                encendido = false;
-               System.out.println("el" + marca +  " "  + modelo + "está apagado");
+               System.out.println("el " + marca +  " "  + modelo + " está apagado");
 
         } else {
                 System.out.println("El auto ya está apagado");
